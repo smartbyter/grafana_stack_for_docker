@@ -3,7 +3,7 @@ version: "3"
 services:
 
   grafana:
-    image: "grafana/grafana-oss:10.2.2"
+    image: "grafana/grafana-oss:11.5.0"
     ports:
       - 3000:3000
     volumes:
@@ -99,7 +99,7 @@ services:
           memory: 512M
           
   loki:
-    image: "grafana/loki:2.9.0"
+    image: "grafana/loki:3.3.2"
     #  - "3100:3100" port closed because loki does not support basic auth
     volumes:
       # touch /mnt/common_volume/swarm/grafana/config/loki.yaml;
