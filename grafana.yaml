@@ -104,7 +104,7 @@ services:
     volumes:
       # touch /mnt/common_volume/swarm/grafana/config/loki.yaml;
       # mkdir -p /mnt/common_volume/grafana/loki-data;
-      - /mnt/common_volume/swarm/grafana/config/local-config.yaml:/etc/loki/local-config.yaml:ro
+      #- /mnt/common_volume/swarm/grafana/config/local-config.yaml:/etc/loki/local-config.yaml:ro
       - /mnt/common_volume/grafana/loki-data:/loki
     command: 
       - "--config.file=/etc/loki/local-config.yaml"
